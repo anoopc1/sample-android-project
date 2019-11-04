@@ -36,14 +36,16 @@ android {
     }
     flavorDimensions "version1"
     productFlavors {
-        1.upto(100, {
-            println "Flavor: ${it}"
-            "flavor${it}" {
-                dimension "version1"
-                applicationIdSuffix ".flavor${it}"
-                versionNameSuffix "-flavor${it}"
-            }
-        })
+        flavor1 {
+            dimension "version1"
+            applicationIdSuffix ".flavor1"
+            versionNameSuffix "-flavor1"
+        }
+        flavor2 {
+            dimension "version1"
+            applicationIdSuffix ".flavor2"
+            versionNameSuffix "-flavor2"
+        }
     }
 }
 
